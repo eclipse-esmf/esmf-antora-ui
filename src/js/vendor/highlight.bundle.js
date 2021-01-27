@@ -31,6 +31,7 @@
   hljs.registerLanguage('shell', require('highlight.js/lib/languages/shell'))
   hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
   hljs.registerLanguage('swift', require('highlight.js/lib/languages/swift'))
+  hljs.registerLanguage('turtle', require('../highlightjs-languages/ttl.js'))
   hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
   hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'))
   ;[].slice.call(document.querySelectorAll('pre code.hljs')).forEach(function (node) {
