@@ -150,7 +150,9 @@ Ea mea agam graeci philosophia.
 * [ ] todo
 * [x] done!
 
-Showing a gear icon: icon:gear[]
+* Showing a gear icon: icon:gear[]
+* Showing a green check icon: icon:check-circle[role="green",size="2x"]
+* Showing a red crossed circle icon: icon:times-circle[role="red",size="2x"]
 
 Vis veri graeci legimus ad.
 

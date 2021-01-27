@@ -820,3 +820,19 @@ h1.page + aside.toc.embedded {
   hyphens: none;
   word-wrap: normal;
 }
+
+.doc .green {
+  color: var(--color-green);
+}
+
+.doc .red {
+  color: var(--color-red);
+}
+
+.doc .orange {
+  color: var(--color-orange);
+}
+
+.doc .blue {
+  color: var(--color-blue);
+}
