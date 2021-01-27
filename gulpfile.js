@@ -33,16 +33,10 @@ const lintCssTask = createTask({
   call: task.lintCss(glob.css),
 })
 
-const lintJsTask = createTask({
-  name: 'lint:js',
-  desc: 'Lint the JavaScript source files using eslint (JavaScript Standard Style)',
-  call: task.lintJs(glob.js),
-})
-
 const lintTask = createTask({
   name: 'lint',
   desc: 'Lint the CSS and JavaScript source files',
-  call: parallel(lintCssTask, lintJsTask),
+  call: parallel(lintCssTask),
 })
 
 const formatTask = createTask({
