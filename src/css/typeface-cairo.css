@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cairo"), local("Cairo-Regular"), url(../font/Cairo-Regular.ttf) format("woff");
+}
+
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Cairo"), local("Cairo-Bold"), url(../font/Cairo-Bold.ttf) format("woff");
+}

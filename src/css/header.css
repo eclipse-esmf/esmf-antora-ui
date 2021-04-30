@@ -92,6 +92,22 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.logo-headline-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: var(--navbar-height);
+  padding: 10px 0 10px 0;
+}
+
+.docu-title {
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
 .navbar-item.has-dropdown {
   padding: 0;
 }
