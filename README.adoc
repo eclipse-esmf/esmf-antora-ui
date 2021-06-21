@@ -1,12 +1,12 @@
-= Antora Default UI
+= OMP Default UI (forked from Antora Default UI)
 // Settings:
 :experimental:
 :hide-uri-scheme:
-// Project URLs:
+// OMP SDS Default UI URLS:
+:url-omp-ui-project: https://github.com/OpenManufacturingPlatform/sds-antora-ui.git
+// Antora Default UI URLs:
 :url-project: https://gitlab.com/antora/antora-ui-default
 :url-preview: https://antora.gitlab.io/antora-ui-default
-:url-ci-pipelines: {url-project}/pipelines
-:img-ci-status: {url-project}/badges/master/pipeline.svg
 // External URLs:
 :url-antora: https://antora.org
 :url-antora-docs: https://docs.antora.org
@@ -14,20 +14,18 @@
 :url-git-dl: {url-git}/downloads
 :url-gulp: http://gulpjs.com
 :url-opendevise: https://opendevise.com
+:url-bci: https://www.bosch-connected-industry.com/de/en/index
 :url-nodejs: https://nodejs.org
 :url-nvm: https://github.com/creationix/nvm
 :url-nvm-install: {url-nvm}#installation
 :url-source-maps: https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map
 
-image:{img-ci-status}[CI Status (GitLab CI), link={url-ci-pipelines}]
+This project is an UI bundle implementing the style guide of the OMP (Open Manufacturing Platform). One can use the bundle to generate OMP styled documentation sites with {url-antora}[Antora].
+This OMP UI bundle is a customized fork of the {url-project}[Antora Default UI] project. Both projects are licensed under the MPL 2.0.
+The OMP Default UI bundle was initially created for generating documentations of the OMP SDS WG (Open Manufacturing Semantic Data Structuring Working Group) but can also be used by other OMP WGs and projects.
 
-This project is an archetype that demonstrates how to produce a UI bundle that can be used by {url-antora}[Antora] to generated a documentation site.
-You can see a preview of the default UI at {url-preview}.
-
-While the default UI is ready to be used with Antora, the intent is that you'll fork it and customize it for your own needs.
-It's intentionally minimalistic so as to give you a good starting point without requiring too much effort to customize.
-
-== Use the Default UI
+////
+== Use the OMP SDS UI
 
 If you want to simply use the default UI for your Antora-generated site, add the following UI configuration to your playbook:
 
@@ -45,6 +43,7 @@ If the URL were to be unique, this setting would not be required.
 
 Read on to learn how to customize the default UI for your own documentation.
 
+////
 == Development Quickstart
 
 This section offers a basic tutorial to teach you how to set up the default UI project, preview it locally, and bundle it for use with Antora.
@@ -121,10 +120,10 @@ Now that you have the prerequisites installed, you can fetch and build the UI pr
 Clone the default UI project using git:
 
 [subs=attributes+]
- $ git clone {url-project} &&
+ $ git clone {url-omp-ui-project} &&
    cd "`basename $_`"
 
-The example above clones Antora's default UI project and then switches to the project folder on your filesystem.
+The example above clones the OMP SDS default UI project and then switches to the project folder on your filesystem.
 Stay in this project folder when executing all subsequent commands.
 
 Use npm to install the project's dependencies inside the project.
@@ -203,11 +202,34 @@ In this case, the bundle will include the source maps, which can be used for deb
 
 == Copyright and License
 
-Copyright (C) 2017-2019 OpenDevise Inc. and the Antora Project.
+Copyright (C) 2020 - 2021 Robert Bosch Manufacturing Solutions GmbH
+
+and 
+
+Copyright (C) 2017-2021 OpenDevise Inc. and the Antora Project.
 
 Use of this software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
 See link:LICENSE[] to find the full license text.
 
+The content in this project is a customized fork from {url-project}[Antora Default UI] which is developed by OpenDevise Inc. and the Antora Project. The fork is based on the commit with the id 64b526ba9fcd22d6c37dc834126a41c65cbbbe1d dated 04.01.2021.
+
+
+== OMP specific changes
+
+In comparision, to the Antora Default UI this fork applies the following changes:
+
+* add and apply OMP specific fonts
+* change colors in accordance to OMP color scheme
+* adapt Readme
+* add RDF/Turtle syntax highlighting
+* disable JavaScript linting
+* increase default body width
+* integrate lunr.js for search (lunr.js is developed in https://github.com/olivernn/lunr.js and licensed under the MIT license)
+
+
+
 == Authors
 
 Development of Antora is led and sponsored by {url-opendevise}[OpenDevise Inc].
+
+The OMP specific adaptations to this OMP Default UI bundle were performed by {url-bci}[Robert Bosch Manufacturing Solutions GmbH].
