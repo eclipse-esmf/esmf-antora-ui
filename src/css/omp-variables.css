@@ -1,0 +1,13 @@
+:root {
+  --omp-primary: #50b3d8ff;
+  --omp-secondary: #d3ecf5ff;
+  --omp-accent: #6d5aceff;
+  --omp-main-text: #7d8287ff;
+  --omp-gold: #d0cd58ff;
+  --omp-light-gray: #c0c0c0ff;
+  --omp-dark-gray: #323d43ff;
+  --omp-black: #000;
+  --omp-footer-font-color: #fff;
+  --omp-font-family: "Cairo", sans-serif;
+  --omp-heading-font-weight: 500;
+}
