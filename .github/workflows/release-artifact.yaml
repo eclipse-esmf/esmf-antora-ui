@@ -1,0 +1,46 @@
+name: Release UI Bundle Zip File
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'Version number of the release'
+        required: true
+      
+jobs:
+  build-ui-bundle:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.1
+    - name: Set up Node
+      uses: actions/setup-node@v2.1.5
+      with:
+        node-version : '15'
+    - name: Install gulp
+      run: npm install -g gulp-cli
+    - name: Install dependencies
+      run: npm install
+    - name: Build UI bundle
+      run: gulp bundle
+    - name: Add NOTICE file to build artifact
+      run: |
+        cd build
+        mkdir sds-antora-ui-bundle
+        unzip ui-bundle.zip -d sds-antora-ui-bundle
+        cp ../legal/NOTICE-build.md ./sds-antora-ui-bundle/NOTICE.md
+        cd sds-antora-ui-bundle
+        zip sds-antora-ui-bundle-${{ github.event.inputs.release_version  }}.zip -r *
+        echo "Done with Zip"
+        ls
+    - name: Create GitHub release
+      uses: softprops/action-gh-release@v1
+      id: sds_antora_ui_release
+      with: 
+        body: "Open Manufacturing Platform Default UI bundle for Antora in version v${{ github.event.inputs.release_version  }}. Intended for internal use within the OMP."
+        tag_name: v${{  github.event.inputs.release_version  }}
+        draft: false
+        prerelease: false
+        files: build/sds-antora-ui-bundle/sds-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+    
