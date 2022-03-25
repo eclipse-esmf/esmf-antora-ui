@@ -91,3 +91,33 @@ body ::-webkit-scrollbar {
 body ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb-color);
 }
+
+div.sect2 h3 {
+  float: left;
+}
+
+div.sect2 div.element-urn {
+  float: right;
+  color: var(--toolbar-muted-color);
+  font-size: 0.75em;
+  text-align: right;
+}
+
+div.sect2 :not(div.element-urn) {
+  clear: both;
+}
+
+div.sect1 h2 {
+  float: left;
+  margin-bottom: 0.5em;
+}
+
+div.sect1 div.sectionbody div.element-urn {
+  float: right;
+  color: var(--toolbar-muted-color);
+  text-align: right;
+}
+
+div.sect1 div.sectionbody :not(div.element-urn) {
+  clear: both;
+}
