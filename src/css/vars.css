@@ -27,7 +27,7 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: var(--omp-font-family);
+  --body-font-family: var(--esmf-font-family);
   --body-font-weight-bold: 500;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
@@ -37,7 +37,7 @@
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--omp-primary);
+  --navbar-background: var(--esmf-primary);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-white);
@@ -81,7 +81,7 @@
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
   --heading-font-color: var(--color-jet-80);
-  --heading-font-weight: var(--omp-heading-font-weight);
+  --heading-font-weight: var(--esmf-heading-font-weight);
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
   --link-font-color: #1565c0;
@@ -118,8 +118,8 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--omp-black);
-  --footer-font-color: var(--omp-footer-font-color);
+  --footer-background: var(--esmf-black);
+  --footer-font-color: var(--esmf-footer-font-color);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
