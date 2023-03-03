@@ -3,17 +3,17 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
-      
+
 jobs:
   build-ui-bundle:
     runs-on: ubuntu-20.04
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.3.1
+      uses: actions/checkout@v3
     - name: Set up Node
-      uses: actions/setup-node@v2.1.5
+      uses: actions/setup-node@v3
       with:
-        node-version : '15'
+        node-version : '16'
     - name: Install gulp
       run: npm install -g gulp-cli
     - name: Install dependencies
@@ -21,7 +21,7 @@ jobs:
     - name: Build UI bundle
       run: gulp bundle
     - name: Upload UI bundle
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
-        name: sds-ui-bundle.zip
+        name: esmf-ui-bundle.zip
         path: build/

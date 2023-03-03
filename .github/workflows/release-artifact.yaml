@@ -5,17 +5,17 @@ on:
       release_version:
         description: 'Version number of the release'
         required: true
-      
+
 jobs:
   build-ui-bundle:
     runs-on: ubuntu-20.04
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.3.1
+      uses: actions/checkout@v3
     - name: Set up Node
-      uses: actions/setup-node@v2.1.5
+      uses: actions/setup-node@v3
       with:
-        node-version : '15'
+        node-version : '16'
     - name: Install gulp
       run: npm install -g gulp-cli
     - name: Install dependencies
@@ -25,22 +25,21 @@ jobs:
     - name: Add NOTICE file to build artifact
       run: |
         cd build
-        mkdir sds-antora-ui-bundle
-        unzip ui-bundle.zip -d sds-antora-ui-bundle
-        cp ../legal/NOTICE-build.md ./sds-antora-ui-bundle/NOTICE.md
-        cd sds-antora-ui-bundle
-        zip sds-antora-ui-bundle-${{ github.event.inputs.release_version  }}.zip -r *
+        mkdir esmf-antora-ui-bundle
+        unzip ui-bundle.zip -d esmf-antora-ui-bundle
+        cp ../legal/NOTICE-build.md ./esmf-antora-ui-bundle/NOTICE.md
+        cd esmf-antora-ui-bundle
+        zip esmf-antora-ui-bundle-${{ github.event.inputs.release_version  }}.zip -r *
         echo "Done with Zip"
         ls
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
-      id: sds_antora_ui_release
-      with: 
-        body: "Open Manufacturing Platform Default UI bundle for Antora in version v${{ github.event.inputs.release_version  }}. Intended for internal use within the OMP."
+      id: esmf_antora_ui_release
+      with:
+        body: "ESMF UI bundle for Antora in version v${{ github.event.inputs.release_version  }}. Intended for internal use within the ESMF."
         tag_name: v${{  github.event.inputs.release_version  }}
         draft: false
         prerelease: false
-        files: build/sds-antora-ui-bundle/sds-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip
+        files: build/esmf-antora-ui-bundle/esmf-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
-    
