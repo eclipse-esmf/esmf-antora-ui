@@ -1,5 +1,5 @@
 :root {
-  /* colors */
+  /* colors */ 
   --color-white: #fff;
   --color-smoke-10: #fefefe;
   --color-smoke-30: #fafafa;
@@ -9,7 +9,7 @@
   --color-gray-10: #c1c1c1;
   --color-gray-30: #8e8e8e;
   --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d;
+  --color-gray-70: #5d5d5d; 
   --color-jet-20: #4a4a4a;
   --color-jet-30: #424242;
   --color-jet-50: #333;
@@ -28,12 +28,12 @@
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
   --body-font-family: var(--esmf-font-family);
-  --body-font-weight-bold: 500;
+  --body-font-weight-bold: 700;
   --monospace-font-family: "Roboto Mono", monospace;
-  --monospace-font-weight-bold: 500;
+  --monospace-font-weight-bold: 700;
   /* base */
   --body-background: var(--color-white);
-  --panel-background: var(--color-smoke-30);
+  --panel-background: var(--esmf-secondary);
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
@@ -51,15 +51,15 @@
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
-  --nav-heading-font-color: var(--color-jet-30);
-  --nav-muted-color: var(--color-gray-70);
+  --nav-heading-font-color: var(--esmf-black);
+  --nav-muted-color: var(--esmf-black);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
-  /* toolbar */
+  /* toolbar */ 
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
-  --toolbar-font-color: var(--color-gray-70);
-  --toolbar-muted-color: var(--color-gray-30);
+  --toolbar-font-color: var(--esmf-black);
+  --toolbar-muted-color: var(--esmf-black);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
@@ -74,9 +74,9 @@
   --warning-color: #e18114;
   --warning-on-color: var(--color-white);
   /* doc */
-  --doc-font-color: var(--color-jet-50);
+  --doc-font-color: var(--esmf-black);
   --doc-font-size: inherit;
-  --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
+  --doc-font-size--desktop: var(--esmf-black);
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
@@ -102,12 +102,12 @@
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--panel-border-color);
-  --pre-annotation-font-color: var(--color-gray-50);
+  --pre-annotation-font-color: var(--esmf-black);
   --quote-background: var(--panel-background);
   --quote-border-color: var(--color-gray-70);
   --quote-font-color: var(--color-gray-70);
   --quote-attribution-font-color: var(--color-gray-30);
-  --sidebar-background: var(--color-smoke-90);
+  --sidebar-background: var(--esmf-secondar);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
   --table-footer-background: linear-gradient(to bottom, var(--color-smoke-70) 0%, var(--color-white) 100%);
@@ -118,7 +118,7 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--esmf-black);
+  --footer-background: var(--esmf-secondary);
   --footer-font-color: var(--esmf-footer-font-color);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */

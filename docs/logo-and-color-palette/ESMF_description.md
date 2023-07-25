@@ -1,7 +1,7 @@
 # ESMF Logo
 
 ## Table of content
-
+  
 1. [Foundational principles](#foundational-principles)
     1. [Icon parts](#icon-parts)
     2. [Color](#color)
@@ -88,7 +88,7 @@ The logo can be used in different surroundings and geometries. Therefore, two di
 | ESMF logo portrait - grey                                                | To be used on white and black surfaces      | ![Logo portrait grey svg](images/11_ESMF-Composite_mark_Portrait_Grey.svg)   | ![Logo landscape grey](images/11_ESMF-Composite_mark_Portrait_Grey.png)  |
 
 ## Favicon
-
+ 
 ![ESMF favicon example light](images/esmf_favicon_example.png)
 ![ESMF favicon example light](images/esmf_favicon_example_black.png)
 
@@ -97,11 +97,12 @@ For implementing the favicon on any web source please find the necessary files i
 The favicon files need to be transferred to the root folder of your web source. 
 Simply integrate the following html lines to the header of your page:
 
-                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-                <link rel="manifest" href="/site.webmanifest">
-                <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+                <link rel="apple-touch-icon" sizes="180x180" href="{{{uiRootPath}}}/img/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="{{{uiRootPath}}}/img/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="{{{uiRootPath}}}/img/favicon-16x16.png">
+                <link rel="icon" type="image/x-icon" href="{{{uiRootPath}}}/img/favicon.ico">
+                <link rel="manifest" href="{{{uiRootPath}}}/img/site.webmanifest">
+                <link rel="mask-icon" href="{{{uiRootPath}}}/img/safari-pinned-tab.svg" color="#5bbad5">
                 <meta name="msapplication-TileColor" content="#da532c">
                 <meta name="theme-color" content="#ffffff">
 
