@@ -1,5 +1,5 @@
 :root {
-  /* colors */ 
+  /* colors */
   --color-white: #fff;
   --color-smoke-10: #fefefe;
   --color-smoke-30: #fafafa;
@@ -9,7 +9,7 @@
   --color-gray-10: #c1c1c1;
   --color-gray-30: #8e8e8e;
   --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d; 
+  --color-gray-70: #5d5d5d;
   --color-jet-20: #4a4a4a;
   --color-jet-30: #424242;
   --color-jet-50: #333;
@@ -55,7 +55,7 @@
   --nav-muted-color: var(--esmf-black);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
-  /* toolbar */ 
+  /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--esmf-black);
