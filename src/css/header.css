@@ -103,6 +103,11 @@ body {
   padding: 10px 0 10px 0;
 }
 
+.logo-headline-wrapper svg {
+  height: 2rem;
+  width: auto;
+}
+
 .docu-title {
   margin-left: 15px;
   white-space: nowrap;

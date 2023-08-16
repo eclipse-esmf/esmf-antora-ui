@@ -1,8 +1,12 @@
 :root {
-  --esmf-primary: #0028cd;
+  --esmf-primary: #995fab;
+  --esmf-secondary: #eff1f2;
+  --esmf-tertiary: #8da5bf;
+  --esmf-bluegrey: #8298e0;
+  --eclipse-orange: #f88d2b;
   --esmf-dark-gray: #323d43ff;
   --esmf-black: #000;
-  --esmf-footer-font-color: #fff;
-  --esmf-font-family: "Cairo", sans-serif;
-  --esmf-heading-font-weight: 500;
+  --esmf-footer-font-color: #000;
+  --esmf-font-family: "Roboto", sans-serif;
+  --esmf-heading-font-weight: 400;
 }
