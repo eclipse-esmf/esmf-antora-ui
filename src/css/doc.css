@@ -33,7 +33,7 @@
 }
 
 .doc h1 {
-  color: var(--esmf-primary);
+  color: var(--esmf-tertiary);
 }
 
 .doc > h1.page:first-child {
