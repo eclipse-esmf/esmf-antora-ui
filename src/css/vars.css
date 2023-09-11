@@ -116,6 +116,10 @@
   --toc-heading-font-color: var(--doc-font-color);
   --toc-border-color: var(--panel-border-color);
   --toc-line-height: 1.2;
+  /*  tiles  */
+  --tile-border-top-color: var(--esmf-tertiary);
+  --tile-background-color: var(--esmf-secondary);
+  --tile-title-font-color: var(--body-font-color);
   /* footer */
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--esmf-secondary);
