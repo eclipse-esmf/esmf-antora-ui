@@ -1,0 +1,72 @@
+/* Sectionbody */
+
+.doc.tiles-page .sectionbody {
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.doc.tiles-page .sectionbody > hr {
+  display: none;
+}
+
+/* Tiles */
+
+.tile {
+  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  border-top: 8px solid var(--tile-border-top-color);
+  background-color: var(--tile-background-color);
+}
+
+.tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+}
+
+.tile .content .paragraph {
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  .tile {
+    width: calc((100% / 2) - 1rem);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tile {
+    width: 100%;
+  }
+}
+
+.tile .title p {
+  color: var(--tile-title-font-color);
+  font-style: normal;
+}
+
+.tile .text p {
+  margin-top: 10px;
+  font-size: calc(15.5 / var(--rem-base) * 1rem);
+  font-style: normal;
+}
+
+.tile .content .paragraph.text {
+  margin-bottom: 1rem;
+}
+
+.tile .content .paragraph.link {
+  margin-top: auto;
+}
+
+.tile .link p {
+  width: 100%;
+  font-size: calc(15.5 / var(--rem-base) * 1rem);
+}
