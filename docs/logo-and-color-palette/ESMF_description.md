@@ -29,7 +29,7 @@ The following colors are used:
 |--------------|-----------------------------------------------------------------|-----------|----------|
 | Consumption  | ![Consumption purple](images/esmf_color_consumption_purple.png) | #995FAB   | API Consumption in UI & backend - the consumption of all required APIs in one UI to provide a customer friendly semantics aware software|
 | Provisioning | ![Provisioning blue](images/esmf_color_provisioning_blue.png)   | #8298E0   | API Provisioning	- provisioning/implementation phase where (at least) one API is provided per Aspect Model to make semantic information available in a modular way - also suitable for microservice style software solutions|
-| Modelling    | ![Modelling bluegrey](images/esmf_color_modelling_bluegrey.png) | #8DA5BF   | Modeling - modeling phase where raw data (from the south side) is explained and turned into Aspect Models|
+| Modeling    | ![Modeling bluegrey](images/esmf_color_modeling_bluegrey.png) | #8DA5BF   | Modeling - modeling phase where raw data (from the south side) is explained and turned into Aspect Models|
 | Eclipse OSS  | ![Eclipse orange](images/esmf_color_eclipse_orange.png)         | #F88D2B   | SAMM	- depicts SAMM like a sun – SAMM as the meta model which is at its heart and formally how to express the meaning of data in Aspect Models|
 
 
