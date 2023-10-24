@@ -93,9 +93,9 @@ The logo can be used in different surroundings and geometries. Therefore, two di
 ![ESMF favicon example light](images/esmf_favicon_example.png)
 ![ESMF favicon example light](images/esmf_favicon_example_black.png)
 
-For implementing the favicon on any web source, find the necessary files in the [favicon_package_v0.16.zip](favicon_package_v0.16.zip "download") folder (generated with [realfavicongenerator](https://realfavicongenerator.net/)).
+For implementing the favicon on any web resource, find the necessary files in the [favicon_package_v0.16](favicon_package_v0.16) folder (generated with [realfavicongenerator](https://realfavicongenerator.net/)).
 
-The favicon files need to be transferred to the root folder of your web source. 
+The favicon files need to be transferred to the root folder of your web resource. 
 Simply integrate the following HTML lines to the header of your page:
 
                 <link rel="apple-touch-icon" sizes="180x180" href="{{{uiRootPath}}}/img/apple-touch-icon.png">
@@ -109,5 +109,6 @@ Simply integrate the following HTML lines to the header of your page:
 
 ## Downloads
 
-All image files from the images folder are also contained in the zip archive [2023_ESMF_Logo_V1.1.zip](2023_ESMF_Logo_V1.1.zip "download").
+Find all logo-related image files (PNG and SVG logo files, favicon files) in the [2023_ESMF_Logo_V1.1](2023_ESMF_Logo_V1.1) folder.
+
 
