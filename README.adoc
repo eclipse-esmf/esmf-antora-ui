@@ -21,8 +21,12 @@
 :url-source-maps: https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map
 
 This project is an UI bundle implementing the style of the Eclipse Semantic
-Modeling Framework (ESMF). One can use the bundle to generate ESMF styled documentation sites with {url-antora}[Antora].
+Modeling Framework (ESMF). Use the bundle to generate ESMF-styled documentation sites with {url-antora}[Antora].
+
 This ESMF UI bundle is a customized fork of the {url-project}[Antora Default UI] project. Both projects are licensed under the MPL 2.0.
+
+> [!NOTE]
+> For image files of the ESMF logo (PNG, SVG, favicon), the color palette, and further visual material, refer to [docs/logo-and-color-palette/ESMF_description.md](docs/logo-and-color-palette/ESMF_description.md).
 
 ////
 == Use the ESMF UI
