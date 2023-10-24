@@ -109,6 +109,6 @@ Simply integrate the following HTML lines to the header of your page:
 
 ## Downloads
 
-Find all logo-related image files (PNG and SVG logo files, favicon files) in the [2023_ESMF_Logo_V1.1](2023_ESMF_Logo_V1.1) folder.
+Find all logo-related image files (PNG and SVG logo files, favicon image files) in the [2023_ESMF_Logo_V1.1](2023_ESMF_Logo_V1.1) folder.
 
 
