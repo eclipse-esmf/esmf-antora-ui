@@ -25,7 +25,7 @@ Modeling Framework (ESMF). Use the bundle to generate ESMF-styled documentation 
 
 This ESMF UI bundle is a customized fork of the {url-project}[Antora Default UI] project. Both projects are licensed under the MPL 2.0.
 
-For image files of the ESMF logo (PNG, SVG, favicon), the color palette, and further visual material, refer to [the logo-and-color-palette section]({url-bci).
+For image files of the ESMF logo (PNG, SVG, favicon), the color palette, and further visual material, refer to [the logo-and-color-palette section]({url-bci}).
 
 ////
 == Use the ESMF UI
