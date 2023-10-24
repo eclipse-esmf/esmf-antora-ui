@@ -1,4 +1,4 @@
-# ESMF Logo
+# ESMF Logo and Color Palette Guide
 
 ## Table of contents
   
