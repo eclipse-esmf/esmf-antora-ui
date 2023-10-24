@@ -17,7 +17,7 @@
 
 ### Icon parts
 
-The ESMF-icon consists of four independent parts. Each one stands for a different meaning, represented by a different color. These four elements represent the process steps during the usage of the ESMF framework with the orange Eclipse Open Source core in the center.
+The ESMF icon consists of four independent parts. Each one stands for a different meaning, represented by a different color. These four elements represent the process steps during the usage of the ESMF framework with the orange Eclipse open source core in the center.
 
 ![Four different parts](images/esmf_icon_description.png)
 
@@ -27,10 +27,10 @@ The following colors are used:
 
 | Scope        | Color sample                                                    | Hex value | Description  |
 |--------------|-----------------------------------------------------------------|-----------|----------|
-| Consumption  | ![Consumption purple](images/esmf_color_consumption_purple.png) | #995FAB   | API Consumption in UI & backend: the consumption of all required APIs in one UI to provide a customer-friendly, semantics-aware software|
-| Provisioning | ![Provisioning blue](images/esmf_color_provisioning_blue.png)   | #8298E0   | API Provisioning: provisioning or implementation phase where (at least) one API per Aspect Model is provided to make semantic information available in a modular way -- also suitable for microservice-style software solutions|
-| Modeling    | ![Modeling bluegray](images/esmf_color_modeling_bluegray.png) | #8DA5BF   | Modeling: modeling phase where raw data (from the south side) is explained and turned into Aspect Models|
-| Eclipse OSS  | ![Eclipse orange](images/esmf_color_eclipse_orange.png)         | #F88D2B   | SAMM: depicts SAMM like a sun – SAMM as the meta model which is at its heart and formally how to express the meaning of data in Aspect Models|
+| Consumption  | ![Consumption purple](images/esmf_color_consumption_purple.png) | #995FAB   | Stands for *API consumption*, for example, the consumption of several Aspect-Model-based APIs in one application, thus providing a customer-friendly, semantics-aware software.|
+| Provisioning | ![Provisioning blue](images/esmf_color_provisioning_blue.png)   | #8298E0   | Represents API provisioning and means the implementation phase where each Aspect Model is taken as a blueprint for building the corresponding API, making semantic information available in a modular way (also suitable for microservice-style software solutions).|
+| Modeling    | ![Modeling bluegray](images/esmf_color_modeling_bluegray.png) | #8DA5BF   | Symbolizes the modeling phase where the available raw data gets explained and described. As a result, these descriptions of data are turned into Aspect Models as a base for future data consumption via APIs.|
+| Eclipse OSS  | ![Eclipse orange](images/esmf_color_eclipse_orange.png)         | #F88D2B   | Depicts the underlying SAMM specification, the "grammar" of how to construct Aspect Models. The Semantic Aspect Meta Model (SAMM) is located at the core of the logo. In the same way, the Eclipse open-source project is at the core of Aspect-Model-based APIs and software applications. That's why this core, SAMM, is colored in Eclipse orange. You might as well think of it as a sun shining light on your data by using semantics.
 
 
 
