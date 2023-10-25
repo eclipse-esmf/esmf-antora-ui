@@ -193,27 +193,20 @@
   }
 
   function init (lunr, data) {
-    var index = Object.assign({ index: lunr.Index.load(data.index), store: data.store })
-    var debug = 'URLSearchParams' in window && new URLSearchParams(window.location.search).has('lunr-debug')
-    var search = debounce(function () {
+    const index = { index: lunr.Index.load(data.index), store: data.store };
+    const isDebugEnabled = 'URLSearchParams' in window && new URLSearchParams(window.location.search).has('lunr-debug');
+
+    const debouncedSearch = debounce(() => {
       try {
-        searchIndex(index.index, index.store, searchInput.value)
+        searchIndex(index.index, index.store, searchInput.value);
       } catch (err) {
-        if (debug) console.debug('Invalid search query: ' + searchInput.value + ' (' + err.message + ')')
+        if (isDebugEnabled) console.debug(`Invalid search query: ${searchInput.value} (${err.message})`);
       }
-    }, 100)
-    searchInput.addEventListener('keydown', search)
+    }, 100);
 
-    searchInput.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') searchInput.value = ''
-    })
-
-    // this is prevented in case of mousedown attached to SearchResultItem
-    searchInput.addEventListener('blur', function (e) {
-      while (searchResult.firstChild) {
-        searchResult.removeChild(searchResult.firstChild)
-      }
-    })
+    searchInput.addEventListener('keydown', debouncedSearch);
+    searchInput.addEventListener('keydown', (event) => event.key === 'Escape' && (searchInput.value = ''));
+    searchInput.addEventListener('blur', () => { while (searchResult.firstChild) searchResult.removeChild(searchResult.firstChild); });
   }
 
   return { init: init }
