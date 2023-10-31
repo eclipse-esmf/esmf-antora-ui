@@ -109,9 +109,9 @@ Simply integrate the following html lines to the header of your page:
                 <meta name="msapplication-TileColor" content="#da532c">
                 <meta name="theme-color" content="#ffffff">
 
-## QR code
+## QR-code
 
-The following qr-codes lead to the ESMF Eclipse project page.
+The following qr-codes lead to the [ESMF Eclipse project page](https://projects.eclipse.org/projects/dt.esmf).
 
 | Name                                                                     | Preferred usage                             | SVG                                                                          | PNG                                                                      |
 |--------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -124,4 +124,5 @@ The following qr-codes lead to the ESMF Eclipse project page.
 
 ## Downloads
 
-All image files are contained in zipped folder [2023_ESMF_Logo_V1.1.zip](2023_ESMF_Logo_V1.1.zip "download").
+- All logo image files are contained in zipped folder [2023_ESMF_Logo_V1.1.zip](2023_ESMF_Logo_V1.1.zip "download all logos").
+- All qr-code image files are contained in zipped folder [ESMF_QR-code_V1.1.zip](ESMF_QR-code_V1.1.zip "download all qr-codes").
