@@ -11,7 +11,7 @@
    1. [Landscape](#landscape)
    2. [Portrait](#portrait)
 4. [Favicon](#favicon)
-5. [QR-code images](#QR-code images)
+5. [QR-code](#qr-code)
 6. [Downloads](#downloads)
 
 ## Foundational Principles
@@ -109,7 +109,7 @@ Simply integrate the following html lines to the header of your page:
                 <meta name="msapplication-TileColor" content="#da532c">
                 <meta name="theme-color" content="#ffffff">
 
-## QR-code images
+## QR code
 
 The following qr-codes lead to the ESMF Eclipse project page.
 
