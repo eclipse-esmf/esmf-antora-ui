@@ -115,12 +115,12 @@ The following qr-codes lead to the [ESMF Eclipse project page](https://projects.
 
 | Name                                                                     | Preferred usage                             | SVG                                                                          | PNG                                                                      |
 |--------------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| ESMF qr-code with icon color | To be used on white and light surfaces | ![ESMF_QR-code_icon_color.svg](images/ESMF_QR-code_icon_color.svg) | ![ESMF QR-code icon color.png](images/ESMF_QR-code_icon_color.png) |
-| ESMF qr-code with icon & name color | To be used on white and light surfaces | ![ESMF_QR-code_icon_name color.svg](images/ESMF_QR-code_icon_name_color.svg) | ![ESMF QR-code icon name color.png](images/ESMF_QR-code_icon_name_color.png) |
-| ESMF qr-code with icon black | To be used on light or white surfaces | ![ESMF_QR-code_icon_black.svg](images/ESMF_QR-code_icon_black.svg) | ![ESMF QR-code icon black.png](images/ESMF_QR-code_icon_black.png) |
-| ESMF qr-code with icon & name black | To be used on light or white surfaces | ![ESMF_QR-code_icon_name_black.svg](images/ESMF_QR-code_icon_name_black.svg) | ![ESMF QR-code icon name_black.png](images/ESMF_QR-code_icon_name_black.png) |
-| ESMF qr-code with icon white | To be used on black and dark surfaces | ![ESMF_QR-code_icon_white.svg](images/ESMF_QR-code_icon_white.svg) | ![ESMF QR-code icon white.png](images/ESMF_QR-code_icon_white.png) |
-| ESMF qr-code with icon & name white | To be used on black and dark gray surfaces  | ![ESMF_QR-code_icon_name_white.svg](images/ESMF_QR-code_icon_name_white.svg) | ![ESMF QR-code icon name_white.svg](images/ESMF_QR-code_icon_name_white.png) |
+| ESMF qr-code with icon color | To be used on white and light surfaces | ![ESMF_QR-code_icon_color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_color.svg) | ![ESMF QR-code icon color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_color.png) |
+| ESMF qr-code with icon & name color | To be used on white and light surfaces | ![ESMF_QR-code_icon_name color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_color.svg) | ![ESMF QR-code icon name color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_color.png) |
+| ESMF qr-code with icon black | To be used on light or white surfaces | ![ESMF_QR-code_icon_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_black.svg) | ![ESMF QR-code icon black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_black.png) |
+| ESMF qr-code with icon & name black | To be used on light or white surfaces | ![ESMF_QR-code_icon_name_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_black.svg) | ![ESMF QR-code icon name_black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_black.png) |
+| ESMF qr-code with icon white | To be used on black and dark surfaces | ![ESMF_QR-code_icon_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_white.svg) | ![ESMF QR-code icon white.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_white.png) |
+| ESMF qr-code with icon & name white | To be used on black and dark gray surfaces  | ![ESMF_QR-code_icon_name_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_white.svg) | ![ESMF QR-code icon name_white.svg](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_white.png) |
 
 ## Downloads
 
