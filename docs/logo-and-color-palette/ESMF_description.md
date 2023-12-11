@@ -63,12 +63,12 @@ The icon and the logo are prepared for different applications and types of usage
 
 ### Icon only
 
-| Name                 | Preferred usage                             | SVG                                              | PNG                                          |
-|----------------------|---------------------------------------------|--------------------------------------------------|----------------------------------------------|
-| ESMF icon – color    | To be used on white and black surfaces      | ![Icon color svg](images/01_ESMF-Icon_Color.svg) | ![Icon color](images/01_ESMF-Icon_Color.png) |
-| ESMF icon – white    | To be used on black and dark gray surfaces  | ![Icon white svg](images/04_ESMF-Icon_White.svg) | ![Icon white](images/04_ESMF-Icon_White.png) |
-| ESMF icon – black    | To be used on white and light gray surfaces | ![Icon black svg](images/02_ESMF-Icon_Black.svg) | ![Icon black](images/02_ESMF-Icon_Black.png) |
-| ESMF icon – gray     | To be used on white and black surfaces      | ![Icon gray svg](images/03_ESMF-Icon_Gray.svg)   | ![Icon gray](images/03_ESMF-Icon_Gray.png)   |
+| Name                 | Preferred usage                       | SVG                                              | PNG                                          |
+|----------------------|---------------------------------------|--------------------------------------------------|----------------------------------------------|
+| ESMF icon – color    | For use on white or black backgrounds | ![Icon color svg](images/01_ESMF-Icon_Color.svg) | ![Icon color](images/01_ESMF-Icon_Color.png) |
+| ESMF icon – white    | For use on black or dark backgrounds  | ![Icon white svg](images/04_ESMF-Icon_White.svg) | ![Icon white](images/04_ESMF-Icon_White.png) |
+| ESMF icon – black    | For use on white or light backgrounds | ![Icon black svg](images/02_ESMF-Icon_Black.svg) | ![Icon black](images/02_ESMF-Icon_Black.png) |
+| ESMF icon – gray     | For use on white or black backgrounds | ![Icon gray svg](images/03_ESMF-Icon_Gray.svg)   | ![Icon gray](images/03_ESMF-Icon_Gray.png)   |
 
 ### Full logo
 
@@ -76,21 +76,21 @@ The logo can be used in different surroundings and geometries. Therefore, two di
 
 #### Landscape
 
-| Name                           | Preferred usage                             | SVG                                                                            | PNG                                                                        |
-|--------------------------------|---------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| ESMF logo landscape – color    | To be used on white and black surfaces      | ![Logo landscape color svg](images/05_ESMF-Composite_mark_Landscape_Color.svg) | ![Logo landscape color](images/05_ESMF-Composite_mark_Landscape_Color.png) |
-| ESMF logo landscape – white    | To be used on black and dark gray surfaces  | ![Logo landscape white svg](images/08_ESMF-Composite_mark_Landscape_White.svg) | ![Logo landscape white](images/08_ESMF-Composite_mark_Landscape_White.png) |
-| ESMF logo landscape – black    | To be used on white and light gray surfaces | ![Logo landscape black svg](images/06_ESMF-Composite_mark_Landscape_Black.svg) | ![Logo landscape black](images/06_ESMF-Composite_mark_Landscape_Black.png) |
-| ESMF logo landscape – gray     | To be used on white and black surfaces      | ![Logo landscape gray svg](images/07_ESMF-Composite_mark_Landscape_Gray.svg)   | ![Logo landscape gray](images/07_ESMF-Composite_mark_Landscape_Gray.png)   |
+| Name                           | Preferred usage                       | SVG                                                                            | PNG                                                                        |
+|--------------------------------|---------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| ESMF logo landscape – color    | For use on white or black backgrounds | ![Logo landscape color svg](images/05_ESMF-Composite_mark_Landscape_Color.svg) | ![Logo landscape color](images/05_ESMF-Composite_mark_Landscape_Color.png) |
+| ESMF logo landscape – white    | For use on black or dark backgrounds  | ![Logo landscape white svg](images/08_ESMF-Composite_mark_Landscape_White.svg) | ![Logo landscape white](images/08_ESMF-Composite_mark_Landscape_White.png) |
+| ESMF logo landscape – black    | For use on white or light backgrounds | ![Logo landscape black svg](images/06_ESMF-Composite_mark_Landscape_Black.svg) | ![Logo landscape black](images/06_ESMF-Composite_mark_Landscape_Black.png) |
+| ESMF logo landscape – gray     | For use on white or black backgrounds | ![Logo landscape gray svg](images/07_ESMF-Composite_mark_Landscape_Gray.svg)   | ![Logo landscape gray](images/07_ESMF-Composite_mark_Landscape_Gray.png)   |
 
 #### Portrait
 
-| Name                         | Preferred usage                             | SVG                                                                          | PNG                                                                      |
-|------------------------------|---------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| ESMF logo portrait – color   | To be used on white and black surfaces      | ![Logo portrait color svg](images/09_ESMF-Composite_mark_Portrait_Color.svg) | ![Logo portrait color](images/09_ESMF-Composite_mark_Portrait_Color.png) |
-| ESMF logo portrait – white   | To be used on black and dark gray surfaces  | ![Logo portrait white svg](images/12_ESMF-Composite_mark_Portrait_White.svg) | ![Logo portrait white](images/12_ESMF-Composite_mark_Portrait_White.png) |
-| ESMF logo portrait – black   | To be used on white and light gray surfaces | ![Logo portrait black svg](images/10_ESMF-Composite_mark_Portrait_Black.svg) | ![Logo portrait black](images/10_ESMF-Composite_mark_Portrait_Black.png) |
-| ESMF logo portrait – gray    | To be used on white and black surfaces      | ![Logo portrait gray svg](images/11_ESMF-Composite_mark_Portrait_Gray.svg)   | ![Logo landscape gray](images/11_ESMF-Composite_mark_Portrait_Gray.png)  |
+| Name                         | Preferred usage                       | SVG                                                                          | PNG                                                                      |
+|------------------------------|---------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| ESMF logo portrait – color   | For use on white or black backgrounds | ![Logo portrait color svg](images/09_ESMF-Composite_mark_Portrait_Color.svg) | ![Logo portrait color](images/09_ESMF-Composite_mark_Portrait_Color.png) |
+| ESMF logo portrait – white   | For use on black or dark backgrounds  | ![Logo portrait white svg](images/12_ESMF-Composite_mark_Portrait_White.svg) | ![Logo portrait white](images/12_ESMF-Composite_mark_Portrait_White.png) |
+| ESMF logo portrait – black   | For use on white or light backgrounds | ![Logo portrait black svg](images/10_ESMF-Composite_mark_Portrait_Black.svg) | ![Logo portrait black](images/10_ESMF-Composite_mark_Portrait_Black.png) |
+| ESMF logo portrait – gray    | For use on white or black backgrounds | ![Logo portrait gray svg](images/11_ESMF-Composite_mark_Portrait_Gray.svg)   | ![Logo landscape gray](images/11_ESMF-Composite_mark_Portrait_Gray.png)  |
 
 ## Favicon
 
@@ -117,12 +117,12 @@ The following QR codes lead to the [ESMF Eclipse project page](https://projects.
 
 | Name                                | Preferred usage                        | SVG                                                                                         | PNG                                                                      |
 |-------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| ESMF QR code with icon color        | To be used on white and light surfaces | ![ESMF_QR-code_icon_color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_color.svg)           | ![ESMF QR-code icon color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_color.png) |
-| ESMF QR code with icon & name color | To be used on white and light surfaces | ![ESMF_QR-code_icon_name color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_color.svg) | ![ESMF QR-code icon name color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_color.png) |
-| ESMF QR code with icon black        | To be used on light or white surfaces  | ![ESMF_QR-code_icon_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_black.svg)           | ![ESMF QR-code icon black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_black.png) |
-| ESMF QR code with icon white        | To be used on black and dark surfaces  | ![ESMF_QR-code_icon_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_white.svg)           | ![ESMF QR-code icon white.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_white.png) |
-| ESMF QR code with icon & name black | To be used on light or white surfaces  | ![ESMF_QR-code_icon_name_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_black.svg) | ![ESMF QR-code icon name_black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_black.png) |
-| ESMF QR code with icon & name white | To be used on black and dark surfaces  | ![ESMF_QR-code_icon_name_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_white.svg) | ![ESMF QR-code icon name_white.svg](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_white.png) |
+| ESMF QR code with icon color        | For use on white or light backgrounds | ![ESMF_QR-code_icon_color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_color.svg)           | ![ESMF QR-code icon color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_color.png) |
+| ESMF QR code with icon & name color | For use on white or light backgrounds | ![ESMF_QR-code_icon_name color.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_color.svg) | ![ESMF QR-code icon name color.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_color.png) |
+| ESMF QR code with icon black        | For use on white or light backgrounds  | ![ESMF_QR-code_icon_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_black.svg)           | ![ESMF QR-code icon black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_black.png) |
+| ESMF QR code with icon white        | For use on black or dark backgrounds  | ![ESMF_QR-code_icon_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_white.svg)           | ![ESMF QR-code icon white.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_white.png) |
+| ESMF QR code with icon & name black | For use on white or light backgrounds  | ![ESMF_QR-code_icon_name_black.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_black.svg) | ![ESMF QR-code icon name_black.png](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_black.png) |
+| ESMF QR code with icon & name white | For use on black or dark backgrounds  | ![ESMF_QR-code_icon_name_white.svg](ESMF_QR-code_V1.1/svg/ESMF_QR-code_icon_name_white.svg) | ![ESMF QR-code icon name_white.svg](ESMF_QR-code_V1.1/png/ESMF_QR-code_icon_name_white.png) |
 
 ## Downloads
 
