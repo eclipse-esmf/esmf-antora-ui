@@ -2,6 +2,11 @@
   'use strict'
 
   var navbarBurger = document.querySelector('.navbar-burger')
+  // var sectionsNavbarBurger = document.querySelector('.sections-navbar-burger')
+
+  // if (!sectionsNavbarBurger) return
+  // sectionsNavbarBurger.addEventListener('click', toggleNavbarMenu.bind(sectionsNavbarBurger))
+ 
   if (!navbarBurger) return
   navbarBurger.addEventListener('click', toggleNavbarMenu.bind(navbarBurger))
 

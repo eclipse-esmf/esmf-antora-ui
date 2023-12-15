@@ -12,6 +12,10 @@
   z-index: var(--z-index-toolbar);
 }
 
+.sections-body .toolbar {
+  background-color: unset;
+}
+
 .toolbar a {
   color: inherit;
 }
@@ -30,6 +34,10 @@
 
 @media screen and (min-width: 1024px) {
   .nav-toggle {
+    display: none;
+  }
+
+  .toolbar {
     display: none;
   }
 }

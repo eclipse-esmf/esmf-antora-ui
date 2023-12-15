@@ -1,6 +1,11 @@
 ;(function () {
   'use strict'
 
+  // if (document.querySelector('.sectionPurple')) {
+  //   console.log('sectionPurple exists')
+  //   document.querySelector('.nav-container').style.backgroundColor = 'white'
+  // }
+
   var SECT_CLASS_RX = /^sect(\d)$/
 
   var navContainer = document.querySelector('.nav-container')

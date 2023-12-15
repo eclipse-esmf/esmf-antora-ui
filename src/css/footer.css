@@ -5,8 +5,14 @@ footer.footer {
   line-height: var(--footer-line-height);
   padding: 1.5rem;
   position: relative;
-  float: left;
+  /* float: left; */
   width: 100%;
+}
+
+.footer-container {
+  display: block;
+  width: 66.66667rem;
+  margin: 0 auto;
 }
 
 .footer p {
