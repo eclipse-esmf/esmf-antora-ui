@@ -1,12 +1,8 @@
 ;(function () {
   'use strict'
+  console.log('mobile navbar')
 
   var navbarBurger = document.querySelector('.navbar-burger')
-  // var sectionsNavbarBurger = document.querySelector('.sections-navbar-burger')
-
-  // if (!sectionsNavbarBurger) return
-  // sectionsNavbarBurger.addEventListener('click', toggleNavbarMenu.bind(sectionsNavbarBurger))
- 
   if (!navbarBurger) return
   navbarBurger.addEventListener('click', toggleNavbarMenu.bind(navbarBurger))
 
@@ -22,4 +18,21 @@
       if (actualMaxHeight !== expectedMaxHeight) menu.style.maxHeight = expectedMaxHeight + 'px'
     }
   }
+
+  // window.addEventListener('resize', removePadding)
+  // function removePadding () {
+  //   var sectionBody = document.querySelector('.sections-body')
+  //   if (sectionBody) {
+  //     console.log('section-body')
+  //     if (window.innerWidth < 800) {
+  //       console.log('below 600')
+  //       var body = document.querySelector('.sections-body')
+  //       body.style.paddingTop = ''
+  //     } else {
+  //       body.style.paddingTop = '3.5rem'
+  //     }
+  //   } else {
+  //     console.log('section-body not found')
+  //   }
+  // }
 })()
