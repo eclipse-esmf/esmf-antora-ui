@@ -2,10 +2,6 @@ html.is-clipped--navbar {
   overflow-y: hidden;
 }
 
-/* body {
-  padding-top: var(--navbar-height);
-} */
-
 .sections-header {
   border-bottom: 0.1rem solid var(--nav-border-color);
   padding-bottom: 0.75rem !important;
@@ -193,7 +189,7 @@ html.is-clipped--navbar {
   margin-right: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
   color: var(--esmf-tertiary);
 }
 
@@ -221,6 +217,7 @@ html.is-clipped--navbar {
 .sections-dropdown-mobile {
   overflow: hidden;
   margin-left: -0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .sections-dropdown-mobile .sections-dropdown-button,
@@ -254,8 +251,9 @@ html.is-clipped--navbar {
   overflow: visible;
 }
 
-.sections-dropdown-mobile > .sections-dropdown-content {
+.sections-dropdown-mobile > .sections-dropdown-content > li {
   position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .sections-dropdown-content a {
@@ -291,7 +289,7 @@ html.is-clipped--navbar {
   }
 
   .sections-navbar-brand {
-    height: inherit;
+    flex: auto;
   }
 
   .sections-navbar-brand .navbar-item {
@@ -313,7 +311,7 @@ html.is-clipped--navbar {
     position: fixed;
     top: 8rem;
     max-height: var(--body-min-height);
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding: 0.5rem 0;
   }
 
@@ -324,6 +322,31 @@ html.is-clipped--navbar {
   .sections-navbar-menu a.navbar-item:hover,
   .sections-navbar-menu .navbar-link:hover {
     background: var(--navbar-menu_hover-background);
+  }
+
+  .sections-header {
+    display: none;
+  }
+
+  .doc > h1 {
+    display: none;
+  }
+
+  .toolbar {
+    top: unset !important;
+  }
+
+  body:has(.sections-body) {
+    padding-top: 0;
+  }
+
+  .sections-body .sections-docu-title {
+    display: block;
+    margin-left: 35px;
+    white-space: nowrap;
+    color: #8da5bf;
+    margin-top: -2rem;
+    z-index: 900;
   }
 }
 
