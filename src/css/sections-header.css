@@ -438,13 +438,15 @@ html.is-clipped--navbar {
   }
 
   body:has(.sections-body) {
-    padding-top: unset;
+    padding-top: 0;
   }
 
   .sections-body .sections-docu-title {
     display: block;
-    margin-left: 15px;
+    margin-left: 35px;
     white-space: nowrap;
     color: #8da5bf;
+    margin-top: -2rem;
+    z-index: 900;
   }
 }
