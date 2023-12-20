@@ -4,9 +4,9 @@ html.is-clipped--navbar {
 
 .sections-header {
   border-bottom: 0.1rem solid var(--nav-border-color);
-  padding-bottom: 0.75rem !important;
+  padding-bottom: 0.25rem !important;
   margin-top: -3rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .sections-navbar {

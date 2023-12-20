@@ -13,7 +13,7 @@
   position: relative;
   float: left;
   width: 100%;
-  grid-gap: 2rem;
+  /* grid-gap: 2rem; */
   flex-wrap: wrap;
   /* background-color: #496583; */
 }
@@ -51,6 +51,11 @@
 
 /* Tiles to sections css */
 
+.sectionPurple .innerTile,
+.sectionBlue .innerTile {
+  margin-top: 0.5rem !important;
+}
+
 .innerTile > .content {
   background: transparent !important;
   border: 6px solid var(--color-white) !important;
@@ -59,7 +64,7 @@
 }
 
 .innerTile > div > div.imageblock.xref-page > div > a > img {
-  margin: 2rem 0.25rem !important;
+  margin: 1rem 0.25rem !important;
 }
 
 .innerTile > .content > .title {
@@ -72,10 +77,10 @@
   background-color: white;
   width: 100%;
   padding: unset;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem; */
+  padding-bottom: 0.5rem;
   position: relative;
-  height: 40vh;
+  height: 20rem;
 }
 
 .sectionWhite > .content {
@@ -106,7 +111,7 @@
 }
 
 .sectionWhite-heading {
-  font-size: 2.8rem;
+  font-size: 2.25rem;
   font-weight: bold;
   color: #496583;
   padding: 1.2rem 0.1rem;
@@ -114,7 +119,7 @@
 }
 
 .sectionWhite-heading-blue {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #2945a3;
   padding: 1.2rem 0.1rem;
@@ -125,7 +130,7 @@
   background-color: white;
   color: #2945a3;
   padding: 0.75rem 7rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
   font-size: 1rem;
@@ -147,7 +152,7 @@
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 52vh;
+  height: 23rem;
 }
 
 .sectionBlue > .tile {
@@ -188,7 +193,7 @@
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 52vh;
+  height: 23rem;
 }
 
 .sectionPurple > .tile {
@@ -287,7 +292,7 @@
 
   .get-started-button {
     padding: 0.5rem 4rem;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
 
   .sectionWhite-heading-blue > p {
