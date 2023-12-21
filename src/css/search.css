@@ -40,7 +40,7 @@
 }
 
 .search-input-landing {
-  padding-right: 4rem !important;
+  padding-right: 4rem;
   background-color: var(--color-smoke-70);
   box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
 }
@@ -108,7 +108,7 @@
 
   .search-input-landing {
     width: 800px;
-    padding: 2 2.25em;
+    padding: 2 1.25em;
   }
 
   .sections-page .search-result-dropdown-menu {

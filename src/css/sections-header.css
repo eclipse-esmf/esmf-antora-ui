@@ -306,8 +306,6 @@ html.is-clipped--navbar {
   }
 
   .sections-navbar-mobile {
-    /* background: var(--navbar-menu-background);
-    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1); */
     position: fixed;
     top: 8rem;
     max-height: var(--body-min-height);
@@ -448,6 +446,12 @@ html.is-clipped--navbar {
 
   .sections-navbar-mobile {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .sections-navbar-menu {
+    margin-left: -16rem;
   }
 }
 
