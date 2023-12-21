@@ -1,0 +1,324 @@
+.body {
+  display: flex !important;
+}
+
+.sections-body {
+  display: flex !important;
+}
+
+/* Sectionbody */
+
+.doc.sections-page .sectionbody {
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  /* grid-gap: 2rem; */
+  flex-wrap: wrap;
+  /* background-color: #496583; */
+}
+
+.doc.sections-page .sectionbody > hr {
+  display: none;
+}
+
+/* Tiles */
+
+.tile {
+  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  /* border-top: 8px solid var(--tile-border-top-color);
+  background-color: var(--tile-background-color); */
+  /* border: 1px solid var(--color-white); */
+  background-color: transparent;
+  border-top: none;
+  margin-top: 2rem;
+}
+
+.tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  color: var(--color-white);
+}
+
+.tile .content .paragraph {
+  margin: 0;
+  width: 100%;
+}
+
+/* Tiles to sections css */
+
+.sectionPurple .innerTile,
+.sectionBlue .innerTile {
+  margin-top: 0.5rem !important;
+}
+
+.innerTile > .content {
+  background: transparent !important;
+  border: 6px solid var(--color-white) !important;
+  border-radius: unset !important;
+  text-align: center;
+}
+
+.innerTile > div > div.imageblock.xref-page > div > a > img {
+  margin: 1rem 0.25rem !important;
+}
+
+.innerTile > .content > .title {
+  text-align: center;
+}
+
+/* Section white */
+
+.sectionbody > .sectionWhite {
+  background-color: white;
+  width: 100%;
+  padding: unset;
+  /* padding-top: 1rem; */
+  padding-bottom: 0.5rem;
+  position: relative;
+  height: 20rem;
+}
+
+.sectionWhite > .content {
+  border: none !important;
+  display: flex;
+  /* grid-gap: 0.1rem; */
+  padding: 0.1rem !important;
+}
+
+.sectionWhite-left {
+  width: 100%;
+}
+
+.sectionWhite-right {
+  flex: 100%;
+}
+
+.sectionWhite-left > .content {
+  border: none !important;
+}
+
+.sectionWhite-right > .content {
+  border: none !important;
+}
+
+.sectionWhite-right > div > div > div > img {
+  float: right;
+}
+
+.sectionWhite-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #496583;
+  padding: 1.2rem 0.1rem;
+  word-break: keep-all;
+}
+
+.sectionWhite-heading-blue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2945a3;
+  padding: 1.2rem 0.1rem;
+  word-break: keep-all;
+}
+
+.get-started-button {
+  background-color: white;
+  color: #2945a3;
+  padding: 0.75rem 7rem;
+  margin-top: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: #496583;
+  opacity: 1;
+}
+
+/* Section blue */
+
+.sectionbody > .sectionBlue {
+  background-color: #496583;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  height: 23rem;
+}
+
+.sectionBlue > .tile {
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+}
+
+.sectionBlue > .tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  color: var(--color-white);
+  text-align: center !important;
+}
+
+.sectionBlue > .content {
+  background: transparent !important;
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  border: none !important;
+}
+
+/* Section purple */
+
+.sectionbody > .sectionPurple {
+  background-color: #774686;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  height: 23rem;
+}
+
+.sectionPurple > .tile {
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+}
+
+.sectionPurple > .tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  color: var(--color-white);
+}
+
+.sectionPurple > .content {
+  background: transparent !important;
+  display: flex;
+  position: relative;
+  float: left;
+  width: 100%;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  border: none !important;
+}
+
+.sectionTitle {
+  color: white;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FA icons */
+
+.fa-cube {
+  font-size: 5rem;
+  color: white;
+}
+
+/* Tiles */
+
+.tile .title p {
+  /* color: var(--tile-title-font-color); */
+  color: var(--color-white);
+  font-style: normal;
+}
+
+.tile .text p {
+  margin-top: 10px;
+  font-size: calc(15.5 / var(--rem-base) * 1rem);
+  font-style: normal;
+  color: var(--color-white);
+}
+
+.tile .content .paragraph.text {
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.tile .content .paragraph.link {
+  margin-top: auto;
+  color: var(--color-white);
+}
+
+.tile .link p {
+  width: 100%;
+  font-size: calc(15.5 / var(--rem-base) * 1rem);
+}
+
+.sectionBlue .link > p > a,
+.sectionPurple .link > p > a {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1140px) {
+  /* .tile {
+    width: calc((100% / 2) - 1rem);
+  } */
+
+  .sectionbody > .sectionPurple,
+  .sectionbody > .sectionBlue {
+    height: unset;
+  }
+
+  .sectionWhite-heading-blue > p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tile {
+    width: 100%;
+  }
+
+  .sectionWhite-heading-blue > p {
+    font-size: 1rem;
+  }
+
+  .sectionbody > .sectionPurple,
+  .sectionbody > .sectionBlue {
+    height: unset;
+  }
+
+  .sectionWhite-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .doc > h1 {
+    display: none;
+  }
+
+  .sectionWhite-heading-blue > p {
+    font-size: 1.25rem;
+  }
+
+  .get-started-button {
+    padding: 0.5rem 2rem;
+    font-size: 0.5rem;
+  }
+}

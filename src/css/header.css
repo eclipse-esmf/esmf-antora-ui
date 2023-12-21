@@ -7,8 +7,8 @@ body {
 }
 
 .navbar {
-  background: var(--navbar-background);
-  color: var(--navbar-font-color);
+  background: #8da5bf;
+  color: white;
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
   position: fixed;
@@ -55,7 +55,7 @@ body {
 }
 
 .navbar-burger span {
-  background-color: var(--navbar-font-color);
+  background-color: white;
   height: 1.5px;
   width: 1rem;
 }
@@ -111,6 +111,7 @@ body {
 .docu-title {
   margin-left: 15px;
   white-space: nowrap;
+  color: white;
 }
 
 .navbar-item.has-dropdown {
