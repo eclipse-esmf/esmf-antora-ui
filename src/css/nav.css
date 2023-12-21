@@ -1,6 +1,6 @@
 .nav-container {
   position: fixed;
-  top: var(--navbar-height);
+  /* top: var(--navbar-height); */
   left: 0;
   width: 100%;
   font-size: calc(17 / var(--rem-base) * 1rem);
@@ -12,6 +12,10 @@
   .nav-container {
     width: var(--nav-width);
   }
+
+  .sections-body .nav {
+    background-color: white;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -21,6 +25,10 @@
     position: static;
     top: 0;
     visibility: visible;
+  }
+
+  .sections-body .nav-container {
+    display: none;
   }
 }
 
@@ -33,6 +41,10 @@
   position: relative;
   top: var(--toolbar-height);
   height: var(--nav-height);
+}
+
+.sections-body .nav {
+  background-color: white;
 }
 
 @media screen and (min-width: 769px) {
