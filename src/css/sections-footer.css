@@ -38,31 +38,10 @@
   font-size: 1rem;
 }
 
-/* .sections-page .footer {
-  background-color: #2945a3;
-  color: white;
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  line-height: var(--footer-line-height);
-  padding: 1.5rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 12vh;
+@media screen and (max-width: 800px) {
+  .sections-footer {
+    font-size: 0.5rem;
+    line-height: unset;
+    padding: 1rem;
+  }
 }
-
-.sections-page .footer-container {
-  display: flex;
-  max-width: 66.66667rem;
-  margin: 0 auto;
-  justify-content: space-between;
-  height: 12vh;
-}
-
-.sections-footer p {
-  margin: 0.5rem 0;
-}
-
-.sections-footer a {
-  color: var(--footer-link-font-color);
-}
- */
