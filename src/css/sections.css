@@ -1,74 +1,19 @@
-.body {
-  display: flex !important;
-}
+/* Sectionbody */
 
 .sections-body {
   display: flex !important;
 }
-
-/* Sectionbody */
 
 .doc.sections-page .sectionbody {
   display: flex;
   position: relative;
   float: left;
   width: 100%;
-  /* grid-gap: 2rem; */
   flex-wrap: wrap;
-  /* background-color: #496583; */
 }
 
 .doc.sections-page .sectionbody > hr {
   display: none;
-}
-
-/* Tiles */
-
-.tile {
-  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
-  padding: 1rem;
-  width: calc((100% / 3) - 1.35rem);
-  /* border-top: 8px solid var(--tile-border-top-color);
-  background-color: var(--tile-background-color); */
-  /* border: 1px solid var(--color-white); */
-  background-color: transparent;
-  border-top: none;
-  margin-top: 2rem;
-}
-
-.tile .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  height: 100%;
-  color: var(--color-white);
-}
-
-.tile .content .paragraph {
-  margin: 0;
-  width: 100%;
-}
-
-/* Tiles to sections css */
-
-.sectionPurple .innerTile,
-.sectionBlue .innerTile {
-  margin-top: 0.5rem !important;
-}
-
-.innerTile > .content {
-  background: transparent !important;
-  border: 6px solid var(--color-white) !important;
-  border-radius: unset !important;
-  text-align: center;
-}
-
-.innerTile > div > div.imageblock.xref-page > div > a > img {
-  margin: 1rem 0.25rem !important;
-}
-
-.innerTile > .content > .title {
-  text-align: center;
 }
 
 /* Section white */
@@ -76,11 +21,9 @@
 .sectionbody > .sectionWhite {
   background-color: white;
   width: 100%;
-  padding: unset;
-  /* padding-top: 1rem; */
-  padding-bottom: 0.5rem;
+  padding: 0.75rem;
   position: relative;
-  height: 20rem;
+  height: 28rem;
 }
 
 .sectionWhite > .content {
@@ -145,14 +88,14 @@
 
 .sectionbody > .sectionBlue {
   background-color: #496583;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   position: relative;
   float: left;
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 23rem;
+  height: 25rem;
 }
 
 .sectionBlue > .tile {
@@ -186,14 +129,14 @@
 
 .sectionbody > .sectionPurple {
   background-color: #774686;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   position: relative;
   float: left;
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 23rem;
+  height: 25rem;
 }
 
 .sectionPurple > .tile {
@@ -231,17 +174,31 @@
   margin-bottom: 0.5rem;
 }
 
-/* FA icons */
+/* Tiles inside of sections */
 
-.fa-cube {
-  font-size: 5rem;
-  color: white;
+.tile {
+  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  background-color: transparent;
+  border-top: none;
+  margin-top: 2rem;
 }
 
-/* Tiles */
+.tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  color: var(--color-white);
+}
+
+.tile .content .paragraph {
+  margin: 0;
+  width: 100%;
+}
 
 .tile .title p {
-  /* color: var(--tile-title-font-color); */
   color: var(--color-white);
   font-style: normal;
 }
@@ -274,37 +231,39 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1140px) {
-  /* .tile {
-    width: calc((100% / 2) - 1rem);
-  } */
+/* Tiles to sections css */
 
+/* .sectionPurple .innerTile,
+.sectionBlue .innerTile {
+  margin-top: 0.5rem !important;
+} */
+
+.innerTile > .content {
+  background: transparent !important;
+  border: 6px solid var(--color-white) !important;
+  border-radius: unset !important;
+  text-align: center;
+}
+
+.innerTile > div > div.imageblock.xref-page > div > a > img {
+  margin: 1rem 0.25rem !important;
+}
+
+.innerTile > .content > .title {
+  text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1140px) {
   .sectionbody > .sectionPurple,
-  .sectionbody > .sectionBlue {
+  .sectionbody > .sectionBlue,
+  .sectionbody > .sectionWhite {
     height: unset;
   }
 
   .sectionWhite-heading-blue > p {
     font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .tile {
-    width: 100%;
-  }
-
-  .sectionWhite-heading-blue > p {
-    font-size: 1rem;
-  }
-
-  .sectionbody > .sectionPurple,
-  .sectionbody > .sectionBlue {
-    height: unset;
-  }
-
-  .sectionWhite-heading {
-    font-size: 1.5rem;
   }
 }
 
@@ -320,5 +279,23 @@
   .get-started-button {
     padding: 0.5rem 2rem;
     font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tile {
+    width: 100%;
+  }
+
+  .sectionWhite-heading-blue > p {
+    font-size: 1rem;
+  }
+
+  .sectionbody .sectionWhite .content {
+    flex-direction: column;
+  }
+
+  .sectionWhite-heading {
+    font-size: 1.5rem;
   }
 }
