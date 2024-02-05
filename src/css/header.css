@@ -300,7 +300,7 @@ body {
   height: var(--navbar-height);
   top: 0;
   z-index: var(--z-index-navbar);
-  width: 66.66667rem;
+  width: 72rem;
   margin: 0 auto;
 }
 

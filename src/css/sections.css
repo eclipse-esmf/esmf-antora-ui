@@ -23,7 +23,7 @@
   width: 100%;
   padding: 0.75rem;
   position: relative;
-  height: 24rem;
+  height: 22rem;
   padding-top: unset !important;
   margin-top: unset !important;
 }
@@ -63,6 +63,7 @@
 
 .sectionWhite-right > div > div > div > img {
   float: right;
+  margin-top: -1.75rem;
 }
 
 .sectionWhite-heading {
@@ -80,18 +81,31 @@
   line-height: 1.2;
   font-weight: bold;
   color: #496583;
-  padding: 1.2rem 0.1rem;
+  padding: 1.75rem 0.1rem 0.5rem 0.1rem;
   word-break: keep-all;
 }
 
 .get-started-button {
   background-color: white;
-  color: #2945a3;
+  color: #496583;
   padding: 0.75rem 7rem;
   margin-top: 1rem;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+  border: 2px solid #496583;
   font-size: 1rem;
+}
+
+.get-started-button a {
+  color: #496583;
+  text-decoration: none;
+}
+
+.get-started-button:hover > a {
+  color: var(--eclipse-orange);
+  text-decoration: none;
+}
+
+.get-started-button:hover {
+  border: 2px solid var(--eclipse-orange);
 }
 
 ::placeholder {
@@ -152,6 +166,7 @@
   grid-gap: 2rem;
   flex-wrap: wrap;
   height: 25rem;
+  margin-bottom: 5rem;
 }
 
 .sectionPurple > .tile {

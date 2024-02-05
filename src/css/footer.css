@@ -34,14 +34,14 @@ footer.footer {
 }
 
 .sections-footer-container {
-  max-width: 66.66667rem;
+  max-width: 72rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 .sections-footer p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 1rem;
   font-size: 1rem;
 }
 
@@ -49,9 +49,9 @@ footer.footer {
   color: var(--footer-link-font-color);
 }
 
-.sections-footer-container-left {
+/* .sections-footer-container-left {
   margin-left: 1rem;
-}
+} */
 
 .sections-footer-container-right {
   margin: 0.25rem 1.25rem;
