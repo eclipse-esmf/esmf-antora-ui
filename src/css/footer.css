@@ -63,10 +63,20 @@ footer.footer {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .sections-footer {
-    font-size: 0.5rem;
     line-height: unset;
     padding: 1rem;
+    /* max-width: 80%; */
   }
+
+  .sections-footer-container {
+    flex-direction: column-reverse;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  /* .sections-footer-container-left {
+    max-width: 80%;
+  } */
 }
