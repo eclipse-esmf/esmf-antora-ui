@@ -315,6 +315,14 @@
   .doc .imageblock img {
     max-width: 110%;
   }
+
+  .sectionWhite-left {
+    padding-left: 1rem;
+  }
+
+  .sections-page > h1 {
+    padding-left: 2.5rem !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
