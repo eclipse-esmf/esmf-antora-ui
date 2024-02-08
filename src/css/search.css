@@ -109,6 +109,13 @@
 
 /* Mobile */
 
+@media screen and (min-width: 1441px) {
+  .search-result-dropdown-menu {
+    margin-left: 2.5rem !important;
+    margin-top: -5.5rem !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-brand {
     flex-grow: 1;
@@ -164,18 +171,16 @@
     padding-right: 0;
   }
 
-  .search-result-dropdown-menu {
-    min-width: calc(100vw - 3.75rem);
-  }
-
   .search-input-landing {
     margin-top: 1.25rem;
     padding-right: 4rem;
     background-color: white;
+    width: 16.75rem !important;
   }
 
   .sections-page .search-result-dropdown-menu {
-    margin-top: -6rem !important;
+    min-width: calc(100vw - 3.75rem);
+    margin-top: -23rem !important;
   }
 
   .search-input-landing:hover {

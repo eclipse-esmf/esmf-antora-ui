@@ -59,6 +59,7 @@
 
 .sectionWhite-left .paragraph {
   color: #496583;
+  /* padding-right: 2rem; */
 }
 
 .sectionWhite-right > div > div > div > img {
@@ -67,7 +68,7 @@
 }
 
 .sectionWhite-heading {
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.2;
   font-weight: bold;
   color: #496583;
@@ -270,7 +271,7 @@
 
 .innerTile > .content {
   background: transparent !important;
-  border: 6px solid var(--color-white) !important;
+  border: 4.5px solid var(--color-white) !important;
   border-radius: unset !important;
   text-align: center;
 }
@@ -285,7 +286,13 @@
 
 /* Mobile */
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1440px) {
+  .sectionWhite .sectionWhite-heading {
+    padding-bottom: unset !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .sectionbody > .sectionPurple,
   .sectionbody > .sectionBlue,
   .sectionbody > .sectionWhite {
@@ -293,26 +300,28 @@
   }
 
   .sectionWhite-heading-blue > p {
-    font-size: 1.25rem;
+    font-size: 2rem;
+  }
+
+  .sectionWhite-heading-blue {
+    padding-top: unset !important;
+  }
+
+  .sectionWhite-heading {
+    padding: unset !important;
+  }
+
+  .doc .image > img,
+  .doc .imageblock img {
+    max-width: 110%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .doc > h1 {
     display: none;
   }
 
-  /* .sectionWhite-heading-blue > p {
-    font-size: 1.25rem;
-  }
-
-  .get-started-button {
-    padding: 0.5rem 2rem;
-    font-size: 0.5rem;
-  } */
-}
-
-@media screen and (max-width: 768px) {
   .sections-page .sectionbody {
     /* max-width: 80% !important; */
     text-align: center;
@@ -321,7 +330,7 @@
   .sectionbody .tile {
     width: 80%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .sectionbody .sectionTitle {
@@ -344,5 +353,44 @@
 
   .sectionWhite-heading {
     font-size: 1.75rem;
+    padding-top: 3rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .sectionWhite-right img {
+    float: unset !important;
+    margin-top: 1rem !important;
+    max-width: 80% !important;
+  }
+
+  .sectionbody .sectionPurple {
+    margin-bottom: 2rem !important;
+  }
+
+  .sectionWhite .sectionWhite-heading-blue {
+    padding: 0.5rem 0.1rem 1.5rem 0.1rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sectionbody .tile {
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .sectionWhite .get-started-button {
+    padding: 0.75rem 3.5rem;
+  }
+
+  .sectionWhite-right img {
+    max-width: 100% !important;
+  }
+
+  main {
+    max-width: 375px;
+  }
+
+  .sectionWhite-heading {
+    padding-bottom: 0.25rem !important;
   }
 }
