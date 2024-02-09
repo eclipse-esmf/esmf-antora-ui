@@ -501,6 +501,14 @@ body {
   color: var(--eclipse-orange);
 }
 
+.sections-dropdown-button:hover .fa-angle-right {
+  rotate: 90deg !important;
+}
+
+.sections-dropdown-button:active .fa-angle-right {
+  rotate: 90deg !important;
+}
+
 .fa-angle-right:hover {
   color: var(--eclipse-orange);
 }
