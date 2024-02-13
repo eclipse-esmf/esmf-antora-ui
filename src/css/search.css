@@ -107,6 +107,11 @@
   background-color: white;
 }
 
+.search-input-landing::placeholder {
+  color: #8da5bf;
+  opacity: 1; /* Firefox */
+}
+
 .search-input-landing:focus {
   border: 2px solid var(--eclipse-orange) !important;
 }

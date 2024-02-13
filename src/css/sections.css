@@ -200,7 +200,7 @@
   color: white;
   position: absolute;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700 !important;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -259,7 +259,7 @@
 .sectionBlue .link > p > a,
 .sectionPurple .link > p > a {
   color: var(--color-white);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* Tiles to sections css */
@@ -274,11 +274,20 @@
   border: 4.5px solid var(--color-white) !important;
   border-radius: unset !important;
   text-align: center;
+  height: 12rem !important;
 }
 
 .innerTile > div > div.imageblock.xref-page > div > a > img {
   margin: 1rem 0.25rem !important;
+  height: 6.5rem !important;
 }
+
+/* .innerTile svg {
+  margin: 0.5rem 0.25rem !important;
+  fill: #fff;
+  font-size: 12px;
+  max-width: 10rem !important;
+} */
 
 .innerTile > .content > .title {
   text-align: center;
@@ -299,6 +308,10 @@
     height: unset;
   }
 
+  .sectionbody > .sectionWhite {
+    padding-top: 1rem !important;
+  }
+
   .sectionWhite-heading-blue > p {
     font-size: 2rem;
   }
@@ -313,15 +326,31 @@
 
   .doc .image > img,
   .doc .imageblock img {
-    max-width: 110%;
+    max-width: 105%;
   }
 
   .sectionWhite-left {
     padding-left: 1rem;
   }
 
+  .sectionWhite-right {
+    padding-top: 1rem !important;
+  }
+
   .sections-page > h1 {
     padding-left: 2.5rem !important;
+  }
+
+  .exampleblock .innerTile {
+    height: 12rem !important;
+  }
+
+  .innerTile > div > div.imageblock.xref-page > div > a > img {
+    margin: 0.5rem 0.25rem !important;
+  }
+
+  .get-started-button {
+    padding: 0.75rem 6rem !important;
   }
 }
 
@@ -344,6 +373,7 @@
   .sectionbody .sectionTitle {
     position: relative;
     margin: 0 auto;
+    font-weight: 700 !important;
   }
 
   .sectionWhite-heading-blue > p {
@@ -391,7 +421,7 @@
   }
 
   .sectionWhite .get-started-button {
-    padding: 0.75rem 3.5rem;
+    padding: 0.75rem 3.5rem !important;
   }
 
   .sectionWhite-right img {
