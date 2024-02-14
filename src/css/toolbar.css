@@ -33,11 +33,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .nav-toggle {
+  .sections-body .nav-toggle {
     display: none;
   }
 
-  .toolbar {
+  .sections-body .toolbar {
     display: none;
   }
 }
