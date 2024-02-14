@@ -1,74 +1,19 @@
-.body {
-  display: flex !important;
-}
+/* Sectionbody */
 
 .sections-body {
   display: flex !important;
 }
-
-/* Sectionbody */
 
 .doc.sections-page .sectionbody {
   display: flex;
   position: relative;
   float: left;
   width: 100%;
-  /* grid-gap: 2rem; */
   flex-wrap: wrap;
-  /* background-color: #496583; */
 }
 
 .doc.sections-page .sectionbody > hr {
   display: none;
-}
-
-/* Tiles */
-
-.tile {
-  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
-  padding: 1rem;
-  width: calc((100% / 3) - 1.35rem);
-  /* border-top: 8px solid var(--tile-border-top-color);
-  background-color: var(--tile-background-color); */
-  /* border: 1px solid var(--color-white); */
-  background-color: transparent;
-  border-top: none;
-  margin-top: 2rem;
-}
-
-.tile .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  height: 100%;
-  color: var(--color-white);
-}
-
-.tile .content .paragraph {
-  margin: 0;
-  width: 100%;
-}
-
-/* Tiles to sections css */
-
-.sectionPurple .innerTile,
-.sectionBlue .innerTile {
-  margin-top: 0.5rem !important;
-}
-
-.innerTile > .content {
-  background: transparent !important;
-  border: 6px solid var(--color-white) !important;
-  border-radius: unset !important;
-  text-align: center;
-}
-
-.innerTile > div > div.imageblock.xref-page > div > a > img {
-  margin: 1rem 0.25rem !important;
-}
-
-.innerTile > .content > .title {
-  text-align: center;
 }
 
 /* Section white */
@@ -76,11 +21,11 @@
 .sectionbody > .sectionWhite {
   background-color: white;
   width: 100%;
-  padding: unset;
-  /* padding-top: 1rem; */
-  padding-bottom: 0.5rem;
+  padding: 0.75rem;
   position: relative;
-  height: 20rem;
+  height: 22rem;
+  padding-top: unset !important;
+  margin-top: unset !important;
 }
 
 .sectionWhite > .content {
@@ -88,6 +33,12 @@
   display: flex;
   /* grid-gap: 0.1rem; */
   padding: 0.1rem !important;
+}
+
+.sections-page > h1 {
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  margin-top: 3rem;
 }
 
 .sectionWhite-left {
@@ -106,34 +57,56 @@
   border: none !important;
 }
 
+.sectionWhite-left .paragraph {
+  color: #496583;
+  /* padding-right: 2rem; */
+}
+
 .sectionWhite-right > div > div > div > img {
   float: right;
+  margin-top: -1.75rem;
 }
 
 .sectionWhite-heading {
-  font-size: 2.25rem;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #496583;
   padding: 1.2rem 0.1rem;
   word-break: keep-all;
+  padding-top: unset !important;
 }
 
 .sectionWhite-heading-blue {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  line-height: 1.2;
   font-weight: bold;
-  color: #2945a3;
-  padding: 1.2rem 0.1rem;
+  color: #496583;
+  padding: 1.75rem 0.1rem 0.5rem 0.1rem;
   word-break: keep-all;
 }
 
 .get-started-button {
   background-color: white;
-  color: #2945a3;
+  color: #496583;
   padding: 0.75rem 7rem;
   margin-top: 1rem;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+  border: 2px solid #496583;
   font-size: 1rem;
+}
+
+.get-started-button a {
+  color: #496583;
+  text-decoration: none;
+}
+
+.get-started-button:hover > a {
+  color: var(--eclipse-orange);
+  text-decoration: none;
+}
+
+.get-started-button:hover {
+  border: 2px solid var(--eclipse-orange);
 }
 
 ::placeholder {
@@ -145,14 +118,14 @@
 
 .sectionbody > .sectionBlue {
   background-color: #496583;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   position: relative;
   float: left;
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 23rem;
+  height: 25rem;
 }
 
 .sectionBlue > .tile {
@@ -186,14 +159,15 @@
 
 .sectionbody > .sectionPurple {
   background-color: #774686;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   position: relative;
   float: left;
   width: 100%;
   grid-gap: 2rem;
   flex-wrap: wrap;
-  height: 23rem;
+  height: 25rem;
+  margin-bottom: 5rem;
 }
 
 .sectionPurple > .tile {
@@ -226,29 +200,43 @@
   color: white;
   position: absolute;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700 !important;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-/* FA icons */
+/* Tiles inside of sections */
 
-.fa-cube {
-  font-size: 5rem;
-  color: white;
+.tile {
+  /* margin: 20px 40px 20px 0; */ /* activate if only 2 tiles per row is preferred */
+  padding: 1rem;
+  width: calc((100% / 3) - 1.35rem);
+  background-color: transparent;
+  border-top: none;
+  margin-top: 2rem;
 }
 
-/* Tiles */
+.tile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  color: var(--color-white);
+}
+
+.tile .content .paragraph {
+  margin: 0;
+  width: 100%;
+}
 
 .tile .title p {
-  /* color: var(--tile-title-font-color); */
   color: var(--color-white);
   font-style: normal;
 }
 
 .tile .text p {
   margin-top: 10px;
-  font-size: calc(15.5 / var(--rem-base) * 1rem);
+  font-size: calc(16 / var(--rem-base) * 1rem);
   font-style: normal;
   color: var(--color-white);
 }
@@ -265,60 +253,186 @@
 
 .tile .link p {
   width: 100%;
-  font-size: calc(15.5 / var(--rem-base) * 1rem);
+  font-size: calc(16 / var(--rem-base) * 1rem);
 }
 
 .sectionBlue .link > p > a,
 .sectionPurple .link > p > a {
   color: var(--color-white);
-  font-weight: bold;
+  font-weight: 500;
 }
 
-@media screen and (max-width: 1140px) {
-  /* .tile {
-    width: calc((100% / 2) - 1rem);
-  } */
+/* Tiles to sections css */
 
+/* .sectionPurple .innerTile,
+.sectionBlue .innerTile {
+  margin-top: 0.5rem !important;
+} */
+
+.innerTile > .content {
+  background: transparent !important;
+  border: 4.5px solid var(--color-white) !important;
+  border-radius: unset !important;
+  text-align: center;
+  height: 12rem !important;
+}
+
+.innerTile > div > div.imageblock.xref-page > div > a > img {
+  margin: 1rem 0.25rem !important;
+  height: 6.5rem !important;
+}
+
+/* .innerTile svg {
+  margin: 0.5rem 0.25rem !important;
+  fill: #fff;
+  font-size: 12px;
+  max-width: 10rem !important;
+} */
+
+.innerTile > .content > .title {
+  text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1440px) {
+  .sectionWhite .sectionWhite-heading {
+    padding-bottom: unset !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .sectionbody > .sectionPurple,
-  .sectionbody > .sectionBlue {
+  .sectionbody > .sectionBlue,
+  .sectionbody > .sectionWhite {
     height: unset;
   }
 
-  .sectionWhite-heading-blue > p {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .tile {
-    width: 100%;
+  .sectionbody > .sectionWhite {
+    padding-top: 1rem !important;
   }
 
   .sectionWhite-heading-blue > p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
-  .sectionbody > .sectionPurple,
-  .sectionbody > .sectionBlue {
-    height: unset;
+  .sectionWhite-heading-blue {
+    padding-top: unset !important;
   }
 
   .sectionWhite-heading {
-    font-size: 1.5rem;
+    padding: unset !important;
+  }
+
+  .doc .image > img,
+  .doc .imageblock img {
+    max-width: 105%;
+  }
+
+  .sectionWhite-left {
+    padding-left: 1rem;
+  }
+
+  .sectionWhite-right {
+    padding-top: 1rem !important;
+  }
+
+  .sections-page > h1 {
+    padding-left: 2.5rem !important;
+  }
+
+  .exampleblock .innerTile {
+    height: 12rem !important;
+  }
+
+  .innerTile > div > div.imageblock.xref-page > div > a > img {
+    margin: 0.5rem 0.25rem !important;
+  }
+
+  .get-started-button {
+    padding: 0.75rem 6rem !important;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .doc > h1 {
     display: none;
   }
 
-  .sectionWhite-heading-blue > p {
-    font-size: 1.25rem;
+  .sections-page .sectionbody {
+    /* max-width: 80% !important; */
+    text-align: center;
   }
 
-  .get-started-button {
+  .sectionbody .tile {
+    width: 80%;
+    margin: 0 auto;
     padding: 0.5rem 2rem;
-    font-size: 0.5rem;
+  }
+
+  .sectionbody .sectionTitle {
+    position: relative;
+    margin: 0 auto;
+    font-weight: 700 !important;
+  }
+
+  .sectionWhite-heading-blue > p {
+    font-size: 1.75rem;
+  }
+
+  .sectionbody .sectionWhite .content {
+    flex-direction: column;
+  }
+
+  .sectionbody .sectionBlue .content,
+  .sectionbody .sectionPurple .content {
+    grid-gap: unset;
+  }
+
+  .sectionWhite-heading {
+    font-size: 1.75rem;
+    padding-top: 3rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .sectionWhite-right img {
+    float: unset !important;
+    margin-top: 1rem !important;
+    max-width: 80% !important;
+  }
+
+  .sectionbody .sectionPurple {
+    margin-bottom: 2rem !important;
+  }
+
+  .sectionWhite .sectionWhite-heading-blue {
+    padding: 0.5rem 0.1rem 1.5rem 0.1rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sectionbody .tile {
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .sectionWhite-left {
+    padding-left: unset !important;
+  }
+
+  .sectionWhite .get-started-button {
+    padding: 0.75rem 3.5rem !important;
+  }
+
+  .sectionWhite-right img {
+    max-width: 100% !important;
+  }
+
+  main {
+    max-width: 375px;
+  }
+
+  .sectionWhite-heading {
+    padding-bottom: 0.25rem !important;
   }
 }
