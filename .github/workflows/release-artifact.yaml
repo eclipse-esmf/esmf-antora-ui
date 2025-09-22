@@ -8,12 +8,12 @@ on:
 
 jobs:
   build-ui-bundle:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Set up Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version : '16'
     - name: Install gulp
@@ -29,14 +29,14 @@ jobs:
         unzip ui-bundle.zip -d esmf-antora-ui-bundle
         cp ../legal/NOTICE-build.md ./esmf-antora-ui-bundle/NOTICE.md
         cd esmf-antora-ui-bundle
-        zip esmf-antora-ui-bundle-${{ github.event.inputs.release_version  }}.zip -r *
+        zip esmf-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip -r *
         echo "Done with Zip"
         ls
     - name: Create GitHub release
       uses: softprops/action-gh-release@v1
       id: esmf_antora_ui_release
       with:
-        body: "ESMF UI bundle for Antora in version v${{ github.event.inputs.release_version  }}. Intended for internal use within the ESMF."
+        body: "ESMF UI bundle for Antora in version v${{ github.event.inputs.release_version }}. Intended for internal use within the ESMF."
         tag_name: v${{  github.event.inputs.release_version  }}
         draft: false
         prerelease: false
