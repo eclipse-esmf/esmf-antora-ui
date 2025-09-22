@@ -6,12 +6,12 @@ on:
 
 jobs:
   build-ui-bundle:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Set up Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v5
       with:
         node-version : '16'
     - name: Install gulp
@@ -21,7 +21,7 @@ jobs:
     - name: Build UI bundle
       run: gulp bundle
     - name: Upload UI bundle
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: esmf-ui-bundle.zip
         path: build/

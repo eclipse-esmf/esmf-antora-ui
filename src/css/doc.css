@@ -21,11 +21,18 @@
 .doc h1,
 .doc h2,
 .doc h3,
-.doc h4,
 .doc h5,
 .doc h6 {
   color: var(--esmf-dark-gray);
   font-weight: var(--heading-font-weight);
+  hyphens: none;
+  line-height: 1.3;
+  margin: 1rem 0 0;
+  clear: both;
+}
+
+.doc h4 {
+  color: var(--esmf-dark-gray);
   hyphens: none;
   line-height: 1.3;
   margin: 1rem 0 0;
