@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # 6.0.1
     - name: Set up Node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # 6.1.0
       with:
         node-version : '16'
     - name: Install gulp
-      run: npm install -g gulp-cli
+      run: npm install -g gulp-cli@3.1.0 --ignore-scripts
     - name: Install dependencies
-      run: npm install
+      run: npm ci --ignore-scripts
     - name: Build UI bundle
       run: gulp bundle
     - name: Add NOTICE file to build artifact
@@ -33,7 +33,7 @@ jobs:
         echo "Done with Zip"
         ls
     - name: Create GitHub release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # v0.1.15
       id: esmf_antora_ui_release
       with:
         body: "ESMF UI bundle for Antora in version v${{ github.event.inputs.release_version }}. Intended for internal use within the ESMF."
