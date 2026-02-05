@@ -5,6 +5,8 @@ on:
       release_version:
         description: 'Version number of the release'
         required: true
+env:
+  RELEASE_VERSION: ${{ github.event.inputs.release_version }}
 permissions: {}
 jobs:
   build-ui-bundle:
@@ -32,17 +34,17 @@ jobs:
         unzip ui-bundle.zip -d esmf-antora-ui-bundle
         cp ../legal/NOTICE-build.md ./esmf-antora-ui-bundle/NOTICE.md
         cd esmf-antora-ui-bundle
-        zip esmf-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip -r *
+        zip esmf-antora-ui-bundle-${RELEASE_VERSION}.zip -r *
         echo "Done with Zip"
         ls
     - name: Create GitHub release
       uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # v0.1.15
       id: esmf_antora_ui_release
       with:
-        body: "ESMF UI bundle for Antora in version v${{ github.event.inputs.release_version }}. Intended for internal use within the ESMF."
-        tag_name: v${{  github.event.inputs.release_version  }}
+        body: "ESMF UI bundle for Antora in version v${{ env.RELEASE_VERSION }}. Intended for internal use within the ESMF."
+        tag_name: v${{ env.RELEASE_VERSION }}
         draft: false
         prerelease: false
-        files: build/esmf-antora-ui-bundle/esmf-antora-ui-bundle-${{ github.event.inputs.release_version }}.zip
+        files: build/esmf-antora-ui-bundle/esmf-antora-ui-bundle-${{ env.RELEASE_VERSION }}.zip
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
