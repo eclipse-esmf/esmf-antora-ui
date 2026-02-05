@@ -3,10 +3,13 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
-
+permissions: {}
 jobs:
   build-ui-bundle:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
     - name: Checkout
       uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # 6.0.1
