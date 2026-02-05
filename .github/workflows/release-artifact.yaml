@@ -12,7 +12,7 @@ jobs:
   build-ui-bundle:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pull-requests: read
     steps:
     - name: Checkout
@@ -21,6 +21,7 @@ jobs:
       uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # 6.1.0
       with:
         node-version : '16'
+        package-manager-cache: false
     - name: Install gulp
       run: npm install -g gulp-cli@3.1.0 --ignore-scripts
     - name: Install dependencies
