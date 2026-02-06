@@ -26,6 +26,18 @@ jobs:
       run: npm install -g gulp-cli@3.1.0
     - name: Install dependencies
       run: npm ci
+    - name: Ensure optipng vendor binary is present
+      shell: bash
+      run: |
+        set -euo pipefail
+
+        echo "npm ignore-scripts = $(npm config get ignore-scripts || true)"
+        echo "Rebuilding optipng-bin with scripts enabled..."
+        npm rebuild optipng-bin --foreground-scripts
+
+        echo "Checking optipng binary..."
+        ls -la node_modules/optipng-bin/vendor || true
+        test -x node_modules/optipng-bin/vendor/optipng
     - name: Build UI bundle
       run: gulp bundle
     - name: Add NOTICE file to build artifact
