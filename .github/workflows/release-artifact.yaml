@@ -26,6 +26,8 @@ jobs:
       run: npm install -g gulp-cli@3.1.0 --ignore-scripts
     - name: Install dependencies
       run: npm ci --ignore-scripts
+    - name: Prepare imagemin binaries
+      run: npm rebuild optipng-bin --foreground-scripts
     - name: Ensure optipng vendor binary is present
       shell: bash
       run: |
