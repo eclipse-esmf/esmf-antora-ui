@@ -18,9 +18,9 @@ jobs:
       with:
         node-version : '16'
     - name: Install gulp
-      run: npm install -g gulp-cli@3.1.0
+      run: npm install -g gulp-cli@3.1.0 --ignore-scripts
     - name: Install dependencies
-      run: npm ci
+      run: npm ci --ignore-scripts
     - name: Build UI bundle
       run: gulp bundle
     - name: Upload UI bundle
