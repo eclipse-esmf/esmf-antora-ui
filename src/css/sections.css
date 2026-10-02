@@ -117,7 +117,7 @@
 /* Section grey */
 
 .sectionbody > .sectionGrey {
-  background-color: #8da5bf;
+  background-color: var(--esmf-dark-grey);
   padding: 1.25rem;
   display: flex;
   position: relative;
@@ -158,7 +158,7 @@
 /* Section blue */
 
 .sectionbody > .sectionBlue {
-  background-color: #8298e0;
+  background-color: var(--esmf-dark-bluegrey);
   padding: 1.25rem;
   display: flex;
   position: relative;
@@ -199,7 +199,7 @@
 /* Section purple */
 
 .sectionbody > .sectionPurple {
-  background-color: #9966ab;
+  background-color: var(--esmf-dark-purple);
   padding: 1.25rem;
   display: flex;
   position: relative;
