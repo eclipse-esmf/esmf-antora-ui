@@ -1,8 +1,13 @@
 :root {
   --esmf-primary: #995fab;
+  --esmf-purple: #995fab;
+  --esmf-dark-purple: #774686;
   --esmf-secondary: #eff1f2;
   --esmf-tertiary: #8da5bf;
+  --esmf-grey: #8da5bf;
+  --esmf-dark-grey: #5e6e80;
   --esmf-bluegrey: #8298e0;
+  --esmf-dark-bluegrey: #496583;
   --eclipse-orange: #f88d2b;
   --esmf-dark-gray: #323d43ff;
   --esmf-black: #000;
