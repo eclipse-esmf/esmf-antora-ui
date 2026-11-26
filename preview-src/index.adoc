@@ -8,6 +8,21 @@ Author Name
 :experimental:
 
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
+
+[tabs]
+====
+Tab 1::
++
+--
+Content of tab 1
+--
+Tab 2::
++
+--
+Content of tab 2
+--
+====
+
 Platonem complectitur mediocritatem ea eos.
 Ei nonumy deseruisse ius.
 Mel id omnes verear.
