@@ -114,7 +114,6 @@ module.exports = (src, dest, preview) => () => {
       cwd: 'node_modules/@asciidoctor/tabs/dist',
       base: 'node_modules/@asciidoctor/tabs/dist',
     }),
-    vfs.src('legal/LICENSE-asciidoctor-tabs.txt', opts),
     vfs.src('font/*.{ttf,woff*(2)}', opts),
     vfs.src('img/**/*.{gif,ico,jpg,png,svg}', opts).pipe(
       preview
